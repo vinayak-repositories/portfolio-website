@@ -1,0 +1,6 @@
+<div class="moth">
+    <img src="https://cdn.prod.website-files.com/62acc17f0bea707cb5017f40/62ace92c4159c5527c1f3f56_Moth.svg" loading="lazy" alt="" class="moth-photo">
+  </div>
+  <div class="sword">
+    <img src="https://cdn.prod.website-files.com/62acc17f0bea707cb5017f40/62acdf59af2ccf640878076d_Sword.svg" loading="lazy" data-w-id="84b312f5-a742-fa3f-186d-0fce93fe6b3b" alt="" class="image-5" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+  </div>
