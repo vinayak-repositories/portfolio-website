@@ -43,42 +43,72 @@ Links Bootstrap Javascript library for functionalities.
 Script for the masonry layout in the "Achievements" section.
 
 
-Understanding the CSS Code
-Gradient Background
-The provided CSS code creates a dynamic gradient background for an element with the class .gradient-background.
+## CSS Style Explanation
 
-background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);: This line defines a linear gradient with three color stops: #00bfff, #ff4c68, and #ef8172. The angle of the gradient is set to 300 degrees.
-background-size: 180% 180%;: This line sets the size of the gradient to 180% in both width and height, creating a stretched and repeating effect.
-animation: gradient-animation 18s ease infinite;: This line applies an animation named gradient-animation to the element. The animation lasts 18 seconds, uses an ease timing function, and repeats infinitely.
-The @keyframes rule defines the gradient-animation by changing the background position over time, creating a smooth transition of the gradient.
+### Understanding the Code
 
-Text Styles
-The rest of the CSS code defines styles for various text elements on the page:
+This CSS code defines various styles for different elements on a webpage. It covers aspects like background, text formatting, layout, and positioning.
 
-.top-text: Sets text alignment, font style, font family, and color for top-level text.
-.name: Styles the name with a specific font, size, and color.
-.pronouns: Styles the pronouns with a specific font, color, and size.
-.logo: Styles the logo text with a specific font, color, and size.
-.nav-text: Styles the navigation text with a specific font, size, and color.
-.btn: Styles buttons with white color and larger font size.
-.btn1: Styles another type of button with white color, solid border, margin, and padding.
-General Styles
-The code also includes general styles:
+### Breakdown of Styles
 
-* { background-color: rgb(18, 18, 18); }: Sets a black background color for all elements.
-.home: Styles the main content area with specific colors, outline, and margins.
-.text-hero: Styles hero text with white color and larger font size.
-.image: Adds margin-top to the image container.
-.container: Centers the container element.
-.w-container: Sets a maximum width for the container.
-.nav-item: Styles navigation items with larger font size and italic style.
-.section: Adds padding to sections.
-.navpad: Adds padding to the navigation area.
-.namepad: Adds padding to the name section.
-.manpad: Adds padding to the recent works section.
-.card-text: Styles card text with color and font size.
-.card-title: Styles card titles with color and font size.
-.mantxt, .cartxt: Styles section titles with specific font, size, and color.
-.follow-along: Styles the follow-along section with color, padding, and text alignment.
-.social-link: Styles social media links with border, padding, and rounded corners.
-.moth: Positions the moth image with z-index, margin, and display properties.
+#### Gradient Background
+
+```css
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+```
+
+* Creates a gradient background with three colors: `#00bfff`, `#ff4c68`, and `#ef8172`.
+* Sets the background size to 180% for both width and height to create a repeating pattern.
+* Applies an animation called `gradient-animation` which smoothly shifts the gradient position over 18 seconds.
+
+#### Text Styles
+
+```css
+.top-text, .name, .pronouns, .logo, .nav-text, .btn, .btn1, .text-hero, .card-text, .card-title, .blockquote, .mantxt, .cartxt, .follow-along, .nav-item {
+  /* ... text properties ... */
+}
+```
+
+* Defines various text styles for different elements using properties like `font-family`, `font-size`, `color`, `text-align`, etc.
+* These styles control the appearance of headings, paragraphs, buttons, and other text elements on the page.
+
+#### Layout and Positioning
+
+```css
+.home, .container, .w-container, .section, .navpad, .namepad, .manpad, .image, .sword, .moth {
+  /* ... layout and positioning properties ... */
+}
+```
+
+* Applies styles for layout and positioning using properties like `margin`, `padding`, `display`, `position`, `width`, etc.
+* Controls the overall structure and placement of elements on the page.
+
+### Key Points
+
+* The code uses a combination of custom and predefined class names to target specific elements.
+* It employs various CSS properties to achieve desired visual effects and layout.
+* The code includes styles for text formatting, background, animations, and element positioning.
+
+### Additional Notes
+
+* The code uses custom properties like `var(--charcoal)` and `var(--eggshell)` which are likely defined elsewhere.
+* The code might be part of a larger stylesheet with additional rules and definitions.
+* Some class names like `w-container` might be specific to a particular framework or library.
+
+**Would you like to focus on a specific part of the code, or do you have any questions about how it works?** 
